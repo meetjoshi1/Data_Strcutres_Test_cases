@@ -1,12 +1,10 @@
 package com.galvanize;
 
 public class Stack {
-    public boolean empty;
     public Node top;
     private int size;
 
     public Stack() {
-        this.empty = true;
         this.size = 0;
     }
 
@@ -14,10 +12,13 @@ public class Stack {
         return size;
     }
 
+    public boolean isEmpty() {
+        return this.count() == 0;
+    }
+
     public void push(Node item) {
         if (top == null) {
             top = item;
-            this.empty = false;
         } else {
             item.setNext(top);
             top = item;

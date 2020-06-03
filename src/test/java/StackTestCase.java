@@ -14,6 +14,11 @@ class StackTestCase {
     }
 
     @Test
+    void testStackEmptyTrue() {
+        assertTrue(stack.isEmpty());
+    }
+
+    @Test
     void testStackPushNode () {
         stack.push(new Node(100));
         assertEquals(1, stack.count());
@@ -40,11 +45,6 @@ class StackTestCase {
         stack.push(topItem);
         Node peekItem = stack.peek();
         assertEquals(topItem, peekItem);
-    }
-
-    @Test
-    void testStackEmptyTrue() {
-        assertTrue(stack.empty);
     }
 
     @Test
