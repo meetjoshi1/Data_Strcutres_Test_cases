@@ -46,4 +46,13 @@ class StackTestCase {
     void testStackEmptyTrue() {
         assertTrue(stack.empty);
     }
+
+    @Test
+    void testNodesEqual() {
+        Node treeNode = new Node("Tree");
+        Node node1 = new Node("Tree");
+        assertEquals(treeNode, node1);
+        Node bushNode = new Node("Bush");
+        assertNotEquals(treeNode, bushNode);
+    }
 }
