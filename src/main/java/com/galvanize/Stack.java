@@ -1,34 +1,39 @@
 package com.galvanize;
 
-import java.util.ArrayList;
-
 public class Stack {
     public boolean empty;
-    private ArrayList items;
+    public Node top;
+    private int size;
 
     public Stack() {
         this.empty = true;
-        this.items = new ArrayList();
+        this.size = 0;
     }
 
     public int count() {
-        return this.items.size();
+        return size;
     }
 
-    public void push(Object item) {
-        this.items.add(item);
-        this.empty = false;
+    public void push(Node item) {
+        if (top == null) {
+            top = item;
+            this.empty = false;
+        } else {
+            item.setNext(top);
+            top = item;
+        }
+        this.size++;
     }
 
-    public Object pop() {
-        int lastIndex = this.count() -1;
-        Object lastItem = this.items.get(lastIndex);
-        this.items.remove(lastIndex);
-        return lastItem;
+    public Node pop() {
+        Node current = top;
+        top = current.getNext();
+        current.setNext(new Node(null));
+        this.size--;
+        return current;
     }
 
-    public Object peek() {
-        int lastIndex = this.count() -1;
-        return this.items.get(lastIndex);
+    public Node peek() {
+        return top;
     }
 }
