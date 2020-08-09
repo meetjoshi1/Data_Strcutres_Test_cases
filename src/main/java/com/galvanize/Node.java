@@ -10,7 +10,7 @@ package com.galvanize;
 
 import java.util.Objects;
 
-public class Node {
+public class Node implements AbstractNode{
     public Object value;
     private Node next;
 
