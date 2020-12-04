@@ -41,7 +41,7 @@ public class GraphTestCase {
         Vertex oakland = new Vertex("Oakland, CA");
         Vertex denver = new Vertex("Denver, CO");
         Vertex chicago = new Vertex("Chicago, IL");
-        ArrayList expected = new ArrayList();
+        ArrayList<Vertex> expected = new ArrayList<Vertex>();
         expected.add(oakland);
         expected.add(denver);
         expected.add(chicago);
