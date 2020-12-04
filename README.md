@@ -15,9 +15,10 @@ For this exercise, the tests have been provided. Focus on pair-programming and t
 - Tests should not be altered.
 - Focus on making the tests pass first.
 
-## Data Structures
 
-- [Stacks]()
-- [Queues]()
-- [Linked Lists]()
-- [Graphs]()
+## Data Structures References
+
+- [Stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [Queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
+- [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))

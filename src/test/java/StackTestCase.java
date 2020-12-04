@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import com.galvanize.Stack;
 import com.galvanize.Node;
 
+// TODO: Deactivate tests one at a time so students attack it one at a time.
+
 class StackTestCase {
     Stack stack;
 
