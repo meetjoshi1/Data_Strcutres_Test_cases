@@ -1,3 +1,5 @@
+package com.galvanize;
+
 /*
   Linked List
 
@@ -30,3 +32,5 @@
   tail. Note how the tail points to nothing. Therefore null signifies
   the end of the list.
  */
+public class LinkedList {
+}

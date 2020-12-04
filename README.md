@@ -14,7 +14,7 @@ For this exercise, the tests have been provided. Focus on pair-programming and t
 
 - Tests should not be altered.
 - Focus on making the tests pass first.
-
+- Uncomment the test methods one at a time, making sure all tests pass before you move on to the next.
 
 ## Data Structures References
 
