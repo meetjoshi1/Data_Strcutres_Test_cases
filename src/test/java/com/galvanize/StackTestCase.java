@@ -16,12 +16,12 @@ class StackTestCase {
         stack = new Stack();
     }
 
-//    @Test
-//    void testIsEmpty() {
-//        assertTrue(stack.isEmpty());
-//        stack.push(new Node(100));
-//        assertFalse(stack.isEmpty());
-//    }
+    @Test
+    void testIsEmpty() {
+        assertTrue(stack.isEmpty());
+        stack.push(new Node(100));
+        assertFalse(stack.isEmpty());
+    }
 //
 //    @Test
 //    void testCount() {
