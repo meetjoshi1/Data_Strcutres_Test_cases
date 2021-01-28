@@ -1,5 +1,7 @@
 package com.galvanize;
 
+import java.util.Objects;
+
 /*
     Node
 
@@ -10,4 +12,36 @@ package com.galvanize;
  */
 public class Node {
 
+    private Object value;
+
+    private Node next;
+
+    public Node(Object value){
+        this.value = value;
+    }
+
+    public Object getValue(){
+        return this.value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Node)) return false;
+        Node node = (Node) o;
+        return Objects.equals(getValue(), node.getValue());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getValue());
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }

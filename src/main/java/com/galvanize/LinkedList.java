@@ -33,4 +33,59 @@ package com.galvanize;
   the end of the list.
  */
 public class LinkedList {
+
+    public Node node;
+
+    public boolean isEmpty(){
+        return node == null;
+    }
+
+    public void addNode(Node node1){
+        if(isEmpty()){
+            node = node1;
+        }
+        else
+        {
+            node1.setNext(node);
+            node = node1;
+        }
+    }
+
+    public Node getHead(){
+        return node;
+    }
+
+    public int count(){
+        Node nodeIterator = node;
+        int count = 0;
+        while (nodeIterator != null){
+            count++;
+            nodeIterator = nodeIterator.getNext();
+        }
+        return count;
+    }
+
+    public Node find(Node node1){
+        Node nodeIterator = node;
+        while (nodeIterator != null){
+            if(nodeIterator.equals(node1))
+                return node1;
+            nodeIterator = nodeIterator.getNext();
+        }
+        return null;
+    }
+
+    public void removeNode(Node node1) {
+
+        Node nodeIterator = node;
+        while (nodeIterator != null) {
+            if (nodeIterator.equals(node1)) {
+                node.setNext(node.getNext().getNext());
+                return;
+            }
+            nodeIterator = nodeIterator.getNext();
+        }
+
+
+    }
 }
